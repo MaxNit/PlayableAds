@@ -1,0 +1,65 @@
+{
+    "clouds/2": {
+        "frame": {
+            "x": 2,
+            "y": 2,
+            "w": 521,
+            "h": 191
+        },
+        "rotated": false,
+        "trimmed": true,
+        "spriteSourceSize": {
+            "x": 1,
+            "y": 1,
+            "w": 521,
+            "h": 191
+        },
+        "sourceSize": {
+            "w": 523,
+            "h": 193
+        }
+        
+    },
+    "clouds/1": {
+        "frame": {
+            "x": 2,
+            "y": 197,
+            "w": 499,
+            "h": 118
+        },
+        "rotated": false,
+        "trimmed": true,
+        "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 499,
+            "h": 118
+        },
+        "sourceSize": {
+            "w": 499,
+            "h": 119
+        }
+        
+    },
+    "clouds/0": {
+        "frame": {
+            "x": 2,
+            "y": 319,
+            "w": 352,
+            "h": 198
+        },
+        "rotated": false,
+        "trimmed": true,
+        "spriteSourceSize": {
+            "x": 1,
+            "y": 1,
+            "w": 352,
+            "h": 198
+        },
+        "sourceSize": {
+            "w": 354,
+            "h": 200
+        }
+        
+    }
+}

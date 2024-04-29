@@ -1,0 +1,5 @@
+{% if playableEnv.isDev %}
+    <script type="text/javascript" src="app.js?r{{ Math.random() }}"></script>
+{% else %}
+    <script type="text/javascript">{{ macros.include('js/app.min.js') }}</script>
+{% endif %}

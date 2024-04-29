@@ -1,0 +1,44 @@
+{
+    "ctaButton/btn-big": {
+        "frame": {
+            "x": 2,
+            "y": 2,
+            "w": 359,
+            "h": 151
+        },
+        "rotated": false,
+        "trimmed": true,
+        "spriteSourceSize": {
+            "x": 2,
+            "y": 1,
+            "w": 359,
+            "h": 151
+        },
+        "sourceSize": {
+            "w": 363,
+            "h": 154
+        }
+        
+    },
+    "ctaButton/play_now": {
+        "frame": {
+            "x": 2,
+            "y": 157,
+            "w": 269,
+            "h": 74
+        },
+        "rotated": false,
+        "trimmed": true,
+        "spriteSourceSize": {
+            "x": 1,
+            "y": 1,
+            "w": 269,
+            "h": 74
+        },
+        "sourceSize": {
+            "w": 271,
+            "h": 76
+        }
+        
+    }
+}

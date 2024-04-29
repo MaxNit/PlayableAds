@@ -1,0 +1,23 @@
+{% extends '../../base/base.html' %}
+
+{% block topHead %}
+    {% if adSize %}
+        <meta name="ad.size" content="width={{ adSize[0] }},height={{ adSize[1] }}">
+    {% else %}
+        <meta name="ad.size" content="width=320,height=480">
+    {% endif %}
+    {% if isIos %}
+        <script type="text/javascript">window.is_ios = true;</script>
+    {% elif isGp %}
+        <script type="text/javascript">window.is_ios = false;</script>
+    {% endif %}
+    <script type="text/javascript">window.is_adwords = true;</script>
+    <script type="text/javascript">{{ macros.include('js/api/adwords.js') }}</script>
+    <script type="text/javascript" src="https://tpc.googlesyndication.com/pagead/gadgets/html5/api/exitapi.js" async onload="initClose()"></script>
+{% endblock %}
+
+{% block body %}
+    {% if playableEnv and playableEnv.lang == 'ru' %}
+        <div class="age">6+</div>
+    {% endif %}
+{% endblock %}

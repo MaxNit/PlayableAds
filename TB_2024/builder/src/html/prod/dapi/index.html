@@ -1,0 +1,24 @@
+{% extends '../../base/base.html' %}
+
+{% block topHead %}    
+    <script type="text/javascript">
+        window.is_dapi = true;
+        {% include "head.js" %}
+    </script>
+{% endblock %}
+
+
+{% block extraCSS %}
+<style>{{ macros.include('loader/loader.css') }}</style>
+{% endblock %} 
+
+
+{% block body %}
+<script>
+window.addEventListener("load", function() {
+{{ macros.include('js/api/dapi.js') }};
+});
+{{ macros.include('loader/loader.js') }};
+loader.create();
+</script>
+{% endblock %}

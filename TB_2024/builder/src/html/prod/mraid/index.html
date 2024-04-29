@@ -1,0 +1,7 @@
+{% extends '../../base/base.html' %}
+
+{% block topHead %}
+    <script type="text/javascript">
+        window.stores = {ios: "{{ appStore }}",gp: "{{ googlePlay }}"}
+        {{ macros.include('js/api/mraid.js') }}
+    </script>{% endblock %}

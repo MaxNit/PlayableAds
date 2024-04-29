@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Информация для QA</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <style>
+            {% include '../../../src/assets/bootstrap/css/bootstrap.min.css' %}
+        </style>
+        <style>
+            .btnDiv {
+                padding-top: 5px;
+                padding-right: 10px;
+                padding-bottom: 5px;
+                float:left;
+            }
+        </style>
+        <script>
+            window.onload = function(){
+                var path = window.location.href.replace("info.html", "");
+                var is = path + "API/dapi/index.html";
+                var isLink = document.getElementById("testIsTool");
+                var isTool = "https://demos.ironsrc.com/test-tool/?adUnitLoader=dapi&mode=testing&adUrl="
+                isLink.setAttribute('href', isTool + is);
+
+                var testIsApi = document.getElementById("testIsApi");
+                testIsApi.innerText = is;
+
+                var tj = path + "API/tapjoy/index.html";
+                var tjLink = document.getElementById("testTjTool");
+                var tjTool = "https://playable.tapjoy.com/"
+                tjLink.setAttribute('href', tjTool);
+
+                var testTjApi = document.getElementById("testTjApi");
+                testTjApi.setAttribute('href', tj);
+                testTjApi.innerText = tj;
+            };
+        </script>
+    <body>
+        <div class="container">
+            <br>
+            <h3>Информация для QA</h3>
+
+            <a href="#" id="testIsTool" target="_blank">IronSource Playable Test Tool</a>
+            <i>URL: <span id="testIsApi">url</span></i>
+            <br>
+
+            {% if tapjoy %}
+                <a href="#" id="testTjTool" target="_blank">TapJoy Playable Test Tool </a>
+                <i>URL: <a href="#" id="testTjApi" target="_blank">url</a></i>
+                <br>
+            {% endif %}
+
+            <br>
+
+            <strong>Ресайзы:</strong> <a href="device.html" target="_blank">device.html</a>
+            <br>
+            <br>
+        </div>
+
+        <p>BUILD TIME: {{buildTime}}</p>
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Lang</th>
+                    <th scope="col">Default</th>
+                    {% if adwords %}
+                        <th scope="col">AdWords</th>
+                    {% endif %}
+                    {% if mraidAmz %}
+                        <th scope="col">Amazon</th>
+                    {% endif %}
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in langs %}
+                    <tr>
+                        <th scope="row">{{ item.lang }}</th>
+                        <td>
+                            <a href="langs/{{ item.lang }}/index.html" class="btn btn-info">Просмотр</a>
+                        </td>
+                        {% if adwords %}
+                            <td>
+                                <a href="langs/{{ item.lang }}/adwords.html" class="btn btn-info">Просмотр</a>
+                                {% if item.adwords_os %}
+                                    <br>
+                                    <a href="langs/{{ item.lang }}/adwords_ios.html" class="btn btn-info">Просмотр (IOS)</a>
+                                {% endif %}
+                            </td>
+                        {% endif %}
+                        {% if item.lang == 'en' and mraidAmz %}
+                        <td>
+                            <a href="langs/{{ item.lang }}/amazon.html" class="btn btn-info">Amazon</a>
+                        </td>
+                        {% endif %}
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+{
+    "pearlBar/bar": {
+        "frame": {
+            "x": 2,
+            "y": 2,
+            "w": 179,
+            "h": 60
+        },
+        "rotated": false,
+        "trimmed": false,
+        "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 179,
+            "h": 60
+        },
+        "sourceSize": {
+            "w": 179,
+            "h": 60
+        }
+        
+    },
+    "pearlBar/pearl": {
+        "frame": {
+            "x": 2,
+            "y": 66,
+            "w": 105,
+            "h": 105
+        },
+        "rotated": false,
+        "trimmed": false,
+        "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 105,
+            "h": 105
+        },
+        "sourceSize": {
+            "w": 105,
+            "h": 105
+        }
+        
+    }
+}

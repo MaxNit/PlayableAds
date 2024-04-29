@@ -1,0 +1,14 @@
+{% extends "../base/base.html" %}
+
+{% block bottomHead %}
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <script type="text/javascript">
+        window.stores = {ios: "{{ appStore }}",gp: "{{ googlePlay }}"}
+    </script>
+{% endblock  %}
+
+{% block body %}
+    <script type="text/javascript">{{ macros.include('js/api/dev.js') }}</script>
+{% endblock %}

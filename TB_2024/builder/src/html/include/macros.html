@@ -1,0 +1,6 @@
+<!-- include from storage -->
+
+{% macro include(path) %}
+    {% set filePath = tempStoragePath + '/' + path %}
+    {% include filePath %}
+{% endmacro %}

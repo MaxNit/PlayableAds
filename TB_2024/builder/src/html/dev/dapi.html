@@ -1,0 +1,21 @@
+{% extends '../prod/dapi/index.html' %}
+
+{% block topHead %}
+    <script type="text/javascript">
+        window.is_dapi = true;
+
+        window.onload = function(){
+            setTimeout(function() {
+                if (typeof superApp !== "undefined") {
+                    superApp.init();
+                } else {
+                    initGame()
+                }
+
+                if (loader) {
+                    loader.clear();
+                }
+            }, 1200);
+        }
+    </script>
+{% endblock %}

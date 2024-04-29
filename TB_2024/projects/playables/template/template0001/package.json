@@ -1,0 +1,28 @@
+{
+  "name": "crada_playable",
+  "version": "1.0.0",
+  "description": "Template for playable",
+  "scripts": {
+    "dev": "node ../../../../builder/.bin/index.js start",
+    "start": "node ../../../../builder/.bin/index.js start --noopen",
+    "build": "node ../../../../builder/.bin/index.js build",
+    "spritesheet": "node ../../../../builder/.bin/index.js spritesheet",
+    "texturepacker": "node ../../../../builder/.bin/index.js texturepacker",
+    "sftp": "node ../../../../builder/.bin/index.js sftp"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist": {
+    "production": [
+      "iOS >= 6",
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

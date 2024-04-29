@@ -1,0 +1,128 @@
+{
+    "logo/bg": {
+        "frame": {
+            "x": 2,
+            "y": 2,
+            "w": 696,
+            "h": 416
+        },
+        "rotated": false,
+        "trimmed": true,
+        "spriteSourceSize": {
+            "x": 1,
+            "y": 1,
+            "w": 696,
+            "h": 416
+        },
+        "sourceSize": {
+            "w": 698,
+            "h": 418
+        }
+        
+    },
+    "logo/title": {
+        "frame": {
+            "x": 2,
+            "y": 422,
+            "w": 505,
+            "h": 122
+        },
+        "rotated": false,
+        "trimmed": true,
+        "spriteSourceSize": {
+            "x": 101,
+            "y": 171,
+            "w": 505,
+            "h": 122
+        },
+        "sourceSize": {
+            "w": 698,
+            "h": 418
+        }
+        
+    },
+    "logo/e": {
+        "frame": {
+            "x": 2,
+            "y": 548,
+            "w": 144,
+            "h": 152
+        },
+        "rotated": false,
+        "trimmed": true,
+        "spriteSourceSize": {
+            "x": 1,
+            "y": 0,
+            "w": 144,
+            "h": 152
+        },
+        "sourceSize": {
+            "w": 157,
+            "h": 153
+        }
+        
+    },
+    "logo/i": {
+        "frame": {
+            "x": 150,
+            "y": 548,
+            "w": 144,
+            "h": 152
+        },
+        "rotated": false,
+        "trimmed": true,
+        "spriteSourceSize": {
+            "x": 2,
+            "y": 1,
+            "w": 144,
+            "h": 152
+        },
+        "sourceSize": {
+            "w": 158,
+            "h": 156
+        }
+        
+    },
+    "logo/t": {
+        "frame": {
+            "x": 298,
+            "y": 548,
+            "w": 147,
+            "h": 152
+        },
+        "rotated": false,
+        "trimmed": true,
+        "spriteSourceSize": {
+            "x": 1,
+            "y": 1,
+            "w": 147,
+            "h": 152
+        },
+        "sourceSize": {
+            "w": 150,
+            "h": 155
+        }
+        
+    },
+    "logo/l": {
+        "frame": {
+            "x": 449,
+            "y": 548,
+            "w": 144,
+            "h": 151
+        },
+        "rotated": false,
+        "trimmed": true,
+        "spriteSourceSize": {
+            "x": 1,
+            "y": 1,
+            "w": 144,
+            "h": 151
+        },
+        "sourceSize": {
+            "w": 147,
+            "h": 155
+        }
+        
+    }
+}

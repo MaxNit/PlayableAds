@@ -1,0 +1,32 @@
+{% import "../include/macros.html" as macros %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        {% block title %}
+            <title>Crada Playable</title>
+        {% endblock %}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+        {% block google_analytics %}{% endblock %}
+        {% block topHead %}{% endblock %}
+        {% include "../include/data.html" %}
+        {% include "../include/config.html" %}
+        <style>{{ macros.include('css/style.css') }}</style>
+        {% block extraCSS %}{% endblock %}
+
+        {% block bottomHead %}{% endblock %}
+    </head>
+
+    <body>
+        {% block body %}{% endblock %}
+    </body>
+    
+    {% block beforeSripts %}{% endblock %}
+    {% include "../include/libs.html" %}
+    {% include "../include/sounds.html" %}
+    {% include "../include/imagesBase.html" %}
+    {% include "../include/imagesLangs.html" %}
+    {% include "../include/app.html" %}
+    {% block afterSripts %}{% endblock %}
+</html>

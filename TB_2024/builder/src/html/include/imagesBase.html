@@ -1,0 +1,3 @@
+{% set images = tempStoragePath + "/images/" + baseImages %}
+{% set spritesheet = tempStoragePath + "/sprites/" + baseImages %}
+<script type="text/javascript">{% include images %}{% include spritesheet ignore missing %}</script>

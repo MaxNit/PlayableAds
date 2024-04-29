@@ -1,0 +1,1 @@
+window.spritesheets={"icons/soundOn":{frame:{x:2,y:2,w:47,h:41},rotated:!1,trimmed:!0,spriteSourceSize:{x:5,y:4,w:47,h:41},sourceSize:{w:55,h:46}},"icons/soundOff":{frame:{x:2,y:47,w:41,h:41},rotated:!1,trimmed:!0,spriteSourceSize:{x:3,y:4,w:41,h:41},sourceSize:{w:55,h:46}}};

@@ -1,0 +1,65 @@
+{
+    "shineParticles/0": {
+        "frame": {
+            "x": 2,
+            "y": 2,
+            "w": 69,
+            "h": 69
+        },
+        "rotated": false,
+        "trimmed": false,
+        "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 69,
+            "h": 69
+        },
+        "sourceSize": {
+            "w": 69,
+            "h": 69
+        }
+        
+    },
+    "shineParticles/1": {
+        "frame": {
+            "x": 75,
+            "y": 2,
+            "w": 69,
+            "h": 69
+        },
+        "rotated": false,
+        "trimmed": false,
+        "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 69,
+            "h": 69
+        },
+        "sourceSize": {
+            "w": 69,
+            "h": 69
+        }
+        
+    },
+    "shineParticles/2": {
+        "frame": {
+            "x": 2,
+            "y": 75,
+            "w": 59,
+            "h": 57
+        },
+        "rotated": false,
+        "trimmed": true,
+        "spriteSourceSize": {
+            "x": 5,
+            "y": 6,
+            "w": 59,
+            "h": 57
+        },
+        "sourceSize": {
+            "w": 69,
+            "h": 69
+        }
+        
+    }
+}

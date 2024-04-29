@@ -1,0 +1,212 @@
+{
+    "digits/2": {
+        "frame": {
+            "x": 2,
+            "y": 2,
+            "w": 20,
+            "h": 31
+        },
+        "rotated": false,
+        "trimmed": true,
+        "spriteSourceSize": {
+            "x": 1,
+            "y": 2,
+            "w": 20,
+            "h": 31
+        },
+        "sourceSize": {
+            "w": 24,
+            "h": 33
+        }
+        
+    },
+    "digits/3": {
+        "frame": {
+            "x": 26,
+            "y": 2,
+            "w": 21,
+            "h": 31
+        },
+        "rotated": false,
+        "trimmed": true,
+        "spriteSourceSize": {
+            "x": 1,
+            "y": 2,
+            "w": 21,
+            "h": 31
+        },
+        "sourceSize": {
+            "w": 24,
+            "h": 33
+        }
+        
+    },
+    "digits/0": {
+        "frame": {
+            "x": 2,
+            "y": 37,
+            "w": 23,
+            "h": 30
+        },
+        "rotated": false,
+        "trimmed": true,
+        "spriteSourceSize": {
+            "x": 1,
+            "y": 3,
+            "w": 23,
+            "h": 30
+        },
+        "sourceSize": {
+            "w": 24,
+            "h": 33
+        }
+        
+    },
+    "digits/5": {
+        "frame": {
+            "x": 29,
+            "y": 37,
+            "w": 21,
+            "h": 30
+        },
+        "rotated": false,
+        "trimmed": true,
+        "spriteSourceSize": {
+            "x": 2,
+            "y": 3,
+            "w": 21,
+            "h": 30
+        },
+        "sourceSize": {
+            "w": 24,
+            "h": 33
+        }
+        
+    },
+    "digits/6": {
+        "frame": {
+            "x": 2,
+            "y": 71,
+            "w": 22,
+            "h": 30
+        },
+        "rotated": false,
+        "trimmed": true,
+        "spriteSourceSize": {
+            "x": 2,
+            "y": 3,
+            "w": 22,
+            "h": 30
+        },
+        "sourceSize": {
+            "w": 24,
+            "h": 33
+        }
+        
+    },
+    "digits/7": {
+        "frame": {
+            "x": 28,
+            "y": 71,
+            "w": 20,
+            "h": 30
+        },
+        "rotated": false,
+        "trimmed": true,
+        "spriteSourceSize": {
+            "x": 4,
+            "y": 3,
+            "w": 20,
+            "h": 30
+        },
+        "sourceSize": {
+            "w": 24,
+            "h": 33
+        }
+        
+    },
+    "digits/8": {
+        "frame": {
+            "x": 52,
+            "y": 71,
+            "w": 22,
+            "h": 30
+        },
+        "rotated": false,
+        "trimmed": true,
+        "spriteSourceSize": {
+            "x": 1,
+            "y": 3,
+            "w": 22,
+            "h": 30
+        },
+        "sourceSize": {
+            "w": 24,
+            "h": 33
+        }
+        
+    },
+    "digits/9": {
+        "frame": {
+            "x": 51,
+            "y": 2,
+            "w": 22,
+            "h": 30
+        },
+        "rotated": false,
+        "trimmed": true,
+        "spriteSourceSize": {
+            "x": 1,
+            "y": 3,
+            "w": 22,
+            "h": 30
+        },
+        "sourceSize": {
+            "w": 24,
+            "h": 33
+        }
+        
+    },
+    "digits/1": {
+        "frame": {
+            "x": 54,
+            "y": 36,
+            "w": 16,
+            "h": 29
+        },
+        "rotated": false,
+        "trimmed": true,
+        "spriteSourceSize": {
+            "x": 3,
+            "y": 4,
+            "w": 16,
+            "h": 29
+        },
+        "sourceSize": {
+            "w": 24,
+            "h": 33
+        }
+        
+    },
+    "digits/4": {
+        "frame": {
+            "x": 74,
+            "y": 36,
+            "w": 24,
+            "h": 29
+        },
+        "rotated": false,
+        "trimmed": true,
+        "spriteSourceSize": {
+            "x": 0,
+            "y": 4,
+            "w": 24,
+            "h": 29
+        },
+        "sourceSize": {
+            "w": 24,
+            "h": 33
+        }
+        
+    }
+}

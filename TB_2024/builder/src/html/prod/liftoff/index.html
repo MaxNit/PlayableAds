@@ -1,0 +1,15 @@
+{% import "../../include/macros.html" as macros %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Playable</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    </head>
+    <body>
+{% include "../../include/data.html" %}
+<div id="styles-container"></div>
+<div id="scripts-container"></div>
+<script type="text/javascript">{{ macros.include('js/api/liftoff.js') }}</script>
+</body></html>

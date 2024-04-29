@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Playable</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <script type="text/javascript">
+    window.apiName = 'default';
+    window.playableEnv = {
+      lang: 'en',
+      isDis: true,
+      isDev: true,
+      titleKey: '<%= htmlWebpackPlugin.options.gameConfig.titleKey %>',
+      apiName: 'default',
+      params: {
+      	showInstallButton: true,
+      },
+    };
+  </script>
+  <script type="text/javascript">
+    window.config = {
+      size: [1390, 640],
+      size_min: [853, 640],
+      crop: true,
+      adaptive: true
+    };
+  </script>
+  <style>
+    body,html{user-select:none}.age,*{padding:0;margin:0}body,html{width:100%;height:100%;background-color:#111;overflow:hidden}canvas{}.playable{opacity:0;position:absolute;left:0px;top:0px;cursor:default!important}.visible{opacity:1;transition: opacity 500ms}.age{right:5px;bottom:5px;z-index:999999;width:30px;height:30px;border:2px solid #fff;border-radius:50%;color:#fff;font-size:16px;line-height:31px;font-family:Arial,sans-serif;text-align:center;background-color:#333}
+  </style>
+  <style>
+    #close {
+      position: fixed;
+      right: 12px;
+      top: 12px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: #000;
+      z-index: 2222;
+      user-select: none;
+    }
+
+    #close::after,
+    #close::before {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 0;
+      height: 0;
+      margin-top: -5px;
+      border-top: 5px solid transparent;
+      border-left: 6px solid #fff;
+      border-bottom: 5px solid transparent;
+      content: "";
+    }
+
+    #close::before {
+      margin-left: -5px;
+    }
+
+    #close::after {
+      margin-left: 1px;
+    }
+
+    #close2 {
+      position: fixed;
+      right: 58px;
+      top: 10px;
+      width: 15px;
+      height: 15px;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      background-color: #000;
+      z-index: 2222;
+      user-select: none;
+      display: none;
+    }
+
+
+    @media (min-aspect-ratio: 2/1) {
+      #close2 {
+        display: block;
+      }
+    }
+
+    @media (max-aspect-ratio: 1/2) {
+      #close2 {
+        top: 58px;
+        right: 10px;
+        display: block;
+      }
+    }
+  </style>
+  <script type="text/javascript">
+    window.stores = {
+      ios: '<%= htmlWebpackPlugin.options.gameConfig.appStore %>',
+      gp: '<%= htmlWebpackPlugin.options.gameConfig.googlePlay %>'
+    };
+
+    window.GLOBAL_SETTINGS_PLAYABLE_DEV = ${ JSON.stringify(htmlWebpackPlugin.options.playableConfig.GLOBAL_SETTINGS_PLAYABLE) }
+  </script>
+</head>
+<body>
+<% if (!htmlWebpackPlugin.options.isMG) { %>
+  <div id="close"></div>
+  <div id="close2"></div>
+<% } %>
+<script type="text/javascript" src="dev.js"></script>
+
+<script type="text/javascript" src="images.base.js"></script>
+<script type="text/javascript" src="images.langs.js"></script>
+<script type="text/javascript" src="sounds.js"></script>
+
+<script>
+  window.sprites = Object.assign(window['images.base.js'], window['images.langs.js']);
+  window.b64 = window['sounds.js'];
+</script>
+
+<% if (htmlWebpackPlugin.options.spriteSheetBase) { %>
+    <script type="text/javascript" src="<%= htmlWebpackPlugin.options.spriteSheetBase %>"></script>
+<% } %>
+
+<% for (let i = 0; i < htmlWebpackPlugin.options.libsList.length; i++ ) { %>
+  <script type="text/javascript" src="<%= htmlWebpackPlugin.options.libsList[i] %>"></script>
+<% } %>
+
+<script type="text/javascript" src="app.js"></script>
+
+<% if (!htmlWebpackPlugin.options.isMG) { %>
+<script>
+  document.getElementById('close').addEventListener('click', function () {
+    if (typeof superApp !== 'undefined') {
+      superApp.skipAd()
+    } else if (typeof skipAd == 'function') {
+      skipAd()
+    }
+  })
+</script>
+<% } %>
+
+</body>
+</html>
